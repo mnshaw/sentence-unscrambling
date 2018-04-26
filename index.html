@@ -1,6 +1,7 @@
 <!doctype html>
 <meta charset='utf-8'>
 <link rel="shortcut icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
 <link href='dist/dragula.css' rel='stylesheet' type='text/css' />
 <link href='example/example.css' rel='stylesheet' type='text/css' />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -12,19 +13,22 @@
   <div class='parent'>
     <label for='hy'>Unscramble the words into a sentence. Put words you don't need in the extras bin.</label>
     <div class='wrapper'>
-      <div id='left-defaults' class='container'>
-        Unscramble a sentence!<br>
+      <div id='words' class='container'>
+        Word Bank:
         <div class="word">coffee</div>
         <div class="word">I</div>
         <div class="word">calm</div>
         <div class="word">like</div>
       </div>
+      <div id='left-defaults' class='container'>
+        <font color="#8b98a0">Sentence:</font>
+      </div>
       <div id='right-defaults' class='container'>
-        Extras
+        <font color="#8dabc1">Extras:</font>
       </div>
     </div>
   </div>
-  <button onclick="submit()">Submit</button>
+  <button id="submit" onclick="submit()">Submit</button>
 </div>
 
 <script src='dist/dragula.js'></script>

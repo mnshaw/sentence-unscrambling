@@ -10,7 +10,7 @@ function submit() {
   $('.word').remove();
 
   for (var i = 0; i < sentences[j].length; i++) {
-    $('#left-defaults').append("<div class='word'>"+sentences[j][i]+"</div>");
+    $('#words').append("<div class='word'>"+sentences[j][i]+"</div>");
   }
 
   if (j < sentences.length - 1) {

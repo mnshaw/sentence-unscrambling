@@ -1,5 +1,6 @@
 body {
-  background-color: #942A57;
+  background-color: #A2B5CD;
+  background-image: url("../sky.jpg");
   margin: 0 auto;
   max-width: 760px;
 }
@@ -17,9 +18,39 @@ html, body {
 }
 
 body, input, button {
-  font-family: Georgia, Helvetica;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 17px;
   color: #ecf0f1;
+}
+
+label {
+  color: #78909c;
+}
+
+button {
+  transition: all 0.4s ease 0s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#submit {
+  background-color: Transparent;
+  color: #6E7B8B;
+  transition: all 0.4s ease 0s;
+  border-radius: 12px;
+  border: solid;
+  border-width: 2px;
+}
+
+#submit:hover {
+  background-color: rgb(255,255,255,.6);
+}
+
+.word {
+  transition: all 0.4s ease 0s;
+  border-radius: 12px;
 }
 
 h1 {
@@ -102,6 +133,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.2);
   margin: 50px 0;
   padding: 20px;
+  margin-top: 150px;
 }
 
 input {
@@ -144,13 +176,20 @@ button:hover {
 }
 .container {
   display: block;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   margin: 10px;
   padding: 10px;
 }
-.container:nth-child(odd) {
+.container:nth-child(1) {
   background-color: rgba(0, 0, 0, 0.2);
 }
+.container:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.container:nth-child(3) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 /*
  * note that styling gu-mirror directly is a bad practice because it's too generic.
  * you're better off giving the draggable elements a unique class and styling that directly!
